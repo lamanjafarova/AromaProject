@@ -1,0 +1,40 @@
+.add{
+    text-align: center;
+    h1{
+     color: #002347;
+     font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    margin: 30px 0;
+    }
+    .form{
+        padding: 50px 0;
+        .input{
+            margin-bottom: 20px;
+            input{
+                padding: 20px 20px;
+                width: 40%;
+                border: none;
+                border-radius: 15px;
+                border-bottom: 1px solid #002347;
+            }
+        }
+        .addBtn{
+            width: 150px;
+            height: 50px;
+            background-color: #002347;
+            border-radius: 25px;
+            border: 1px solid #eeeeee;
+            transition: all 0.4s;
+            font-size: 15px;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 20px;
+            &:hover{
+                border: 1px solid #002347;
+                cursor: pointer;
+                background-color: #fff;
+                color: #222222;
+                }
+        }
+    }
+}

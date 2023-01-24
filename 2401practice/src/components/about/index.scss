@@ -1,0 +1,52 @@
+#about{
+    .container{
+        .about-p{
+            font-size: 15px;
+            color: #777777;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 60px;
+        }
+        .about-h2{
+            font-size: 36px;
+            font-family: 'Oswald', sans-serif;
+            color: #222222;
+            font-weight: 700;
+            margin-bottom: 20px;
+            margin-left: 60px;
+        }
+        .aboutImgandText{
+            display: flex;
+            justify-content: space-around;
+            .txt-p{
+                font-size: 20px;
+                color: #222222;
+                width: 350px;
+                padding: 10px 0;
+                font-family: 'Roboto', sans-serif;
+                &:hover{
+                    color: #384aeb;
+                    cursor: pointer;
+                }
+            }
+            .txt-p-2{
+                font-size: 15px;
+                color: #777777;
+                width: 350px;
+                font-family: 'Oswald', sans-serif;
+                line-height: 20px;
+            }
+            .btn-txt{
+                border: none;
+                background-color: transparent;
+                padding: 10px 0;
+                font-size: 15px;
+                transition: all 0.4s;
+                &:hover{
+                    color: black;
+                    cursor: pointer;
+                    color: #384aeb;
+                }
+            }
+        }
+    }
+}

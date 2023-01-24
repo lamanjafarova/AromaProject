@@ -1,0 +1,46 @@
+.container{
+    .wish{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 45px;
+        margin: 40px 0;
+        .wishcard{
+            .product-p{
+                font-size: 15px;
+                color: #777777;
+                padding: 10px 0;
+                text-align: center;
+                line-height: 20px;
+            }
+            .product-h1{
+                font-size: 20px;
+                color: #222222;
+                text-align: center;
+                font-family: 'Oswald', sans-serif;
+            }
+            .product-price{
+                font-size: 18px;
+                color: #777777;
+                padding: 10px 0;
+                text-align: center;
+            }
+            .remove{
+                width: 150px;
+                height: 50px;
+                background-color: #fff;
+                border-radius: 25px;
+                border: 1px solid #eeeeee;
+                transition: all 0.4s;
+                font-size: 15px;
+                color: #222222;
+                font-weight: bold;
+                text-align: center;
+                margin-left: 50px;
+                &:hover{
+                    border: 1px solid #384aeb;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

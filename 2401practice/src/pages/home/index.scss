@@ -1,0 +1,84 @@
+#home{
+     .section{
+        position: relative;
+       .text{
+        display: flex;
+        .section-one{
+            width: 40%;
+            height: 700px;
+            background-color: #384aeb;
+        }
+        .section-two{
+            width: 60%;
+            height: 700px;
+            padding-left: 200px;
+            padding-top: 200px;
+            background-color: #f1f6f7;
+            .text-h4{
+                color: #555555;
+                font-size: 30px;
+            }
+            .text-h1{
+                color: #222222;
+                font-size: 50px;
+            }
+            .text-p{
+                width: 500px;
+                // margin-left: 60px;
+                font-size: 15px;
+                color: #777777;
+                padding: 10px 0;
+            }
+            .text-btn{
+                    width: 150px;
+                    height: 50px;
+                    background-color: #384aeb;
+                    border-radius: 25px;
+                    border: 1px solid #eeeeee;
+                    transition: all 0.4s;
+                    font-size: 15px;
+                    color: #fff;
+                    font-weight: bold;
+                    margin-top: 20px;
+                    &:hover{
+                        border: 1px solid #384aeb;
+                        cursor: pointer;
+                        background-color: #fff;
+                        color: #222222;
+                    }
+            }
+        }
+       }
+       img{
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        height: 631px;
+        width: 460px;
+       }
+     }
+     .container{
+        .productsList{
+            margin-top: 90px;
+            .p_text{
+                font-size: 15px;
+                color: #777777;
+                font-family: 'Roboto', sans-serif;
+                margin-left: 100px;
+            }
+            .h2_text{
+                font-size: 36px;
+                font-family: 'Oswald', sans-serif;
+                color: #222222;
+                font-weight: 700;
+                margin-left: 100px;
+            }
+        }
+     }
+     .caruselProductList{
+        margin: 90px 0;
+     }
+     .aboutPage{
+        margin: 90px 0;
+     }
+}
