@@ -50,10 +50,18 @@
                         padding: 10px 0;
                         text-align: center;
                     }
+                   .btn{
+                    display: flex;
+                    justify-content: space-around;
+
                     .delBtn{
-                        width: 100%;
-                        border: none;
+                        // width: 100%;
+                        // border: none;
                         background-color: transparent;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                        cursor: pointer;
                         i{
                             text-align: center;
                             font-size: 15px;
@@ -62,12 +70,27 @@
                         }
                     }
                     .add{
-                        background-color: red;
+                         color:red;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
                         i{
                             color: red;
                             font-size: 20px;
+                            // text-align: center;
                         }
                     }
+                    .not-add{
+                          width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+                        i{
+                            color: #002347;
+                        }
+                    }
+                   }
                 }
             }
         }

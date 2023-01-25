@@ -14,6 +14,10 @@ const AddProductSchema = Yup.object().shape({
     .min(2, 'Too Short!')
     .max(50, 'Too Long!')
     .required('Required'),
+    price: Yup.number()
+    .min(2, 'Too Short!')
+    .max(1000, 'Too Long!')
+    .required('Required'),
 });
 const AddProduct = () => {
   const navigate = useNavigate()
@@ -45,6 +49,9 @@ const AddProduct = () => {
              <div>{errors.name}</div>
            ) : null}
           <div className="input"><Field name="price" type="price" placeholder="Price" /></div>
+          {errors.price && touched.price ? (
+             <div>{errors.price}</div>
+           ) : null}
        <div className="input"><Field name="imgUrl" type="imgUrl" placeholder="Image Url" /></div>
            <button className='addBtn' type="submit">Submit</button>
          </Form>

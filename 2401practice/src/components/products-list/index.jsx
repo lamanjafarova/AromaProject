@@ -5,6 +5,7 @@ import "./index.scss"
 
 const ProductsList = ({wishList, setWishList}) => {
     const [products, setProducts] = useState([]);
+    const [toggle, setToggle] = useState(true)
     const getData = async() => {
         let response = await axios.get("http://localhost:8000/product")
         setProducts(response.data)
@@ -19,8 +20,13 @@ const ProductsList = ({wishList, setWishList}) => {
       setProducts(deletedData)
     }
 const handleSort = (obj) => {
-  let sortedPrice = obj.sort((a, b) => a.price - b.price)
+  setToggle(!toggle)
+  if(toggle){
+    let sortedPrice = obj.sort((a, b) => a.price - b.price)
   setProducts([...sortedPrice])
+  } else {
+   getData()
+  }
 }
    const handleSearch = (e) => {
     axios.get("http://localhost:8000/product")
@@ -51,8 +57,10 @@ const handleSort = (obj) => {
                         <p className='card-p'>{element.title}</p>
                         <h5 className='card-h5'>{element.name}</h5>
                         <p className='card-price'>${element.price}.00</p>
+                        <div className="btn">
                         <button className='delBtn' onClick={() => handleDelete(element._id)}><i className="fa-solid fa-trash"></i></button>
-                        <button className={wishList.filter((el) => el._id === element._id ? "add" : "not-add")} onClick={() => addWishListFunction(element)}><i className="fa-solid fa-heart"></i></button>
+                        <button className={(wishList.find((el) => el._id === element._id) ? "add" : "not-add")} onClick={() => addWishListFunction(element)}><i className="fa-solid fa-heart"></i></button>
+                        </div>
                         </div>
                     })} 
            </div>
